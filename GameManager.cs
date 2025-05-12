@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Illusion Mode")]
     public bool isIllusionMode = false;
-    public float illusionChance = 0.3f; // шанс включения иллюзии
+    public float illusionChance = 0.3f; 
     public float illusionDuration = 10f;
 
     private void Awake()
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating(nameof(DrainStats), 1f, 1f);
-        InvokeRepeating(nameof(CheckIllusionMode), 15f, 15f); // проверка иллюзии каждые 15 сек
+        InvokeRepeating(nameof(CheckIllusionMode), 15f, 15f); 
 
         UpdateUI();
     }
